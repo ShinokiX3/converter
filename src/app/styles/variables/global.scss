@@ -1,5 +1,6 @@
 :root {
     --shadow-default: 0 0 10px rgba(0, 0, 0, 0.2);
+    --shadow-harder: 0 2px 5px rgba(0, 0, 0, 0.4);
  
     --header-height: 50px;
     --header-color: linear-gradient(45deg, #ff0000, #ff6600, #ffcc00, #33cc33, #0099ff, #9933cc);
@@ -7,7 +8,16 @@
     --color-primary: black;
     --color-secondary: rgb(111, 62, 62);
     --color-accent: red;
+    --color-blue: rgb(66, 66, 231);
+
+    --font-size-default: 16px;
+    --font-size-sm: 14px;
+    --font-size-l: 18px;
+    --font-size-xl: 24px;
+
+    --font-weight-default: 600;
 
     --border-radius: 1rem;
     --border-radius-sm: 0.5rem;
+    --border-radius-xm: 0.25rem;
 }

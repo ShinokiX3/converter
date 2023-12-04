@@ -1,0 +1,29 @@
+.Button {
+    padding: 10px 30px 10px 15px;
+    border-radius: var(--border-radius-sm);
+	cursor: pointer;
+}
+
+.shadow {
+    box-shadow: var(--shadow-harder);
+}
+
+.clear {
+	border: none;
+	background: none;
+}
+
+.so_clear {
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+.outline {
+	border: none;
+	background: none;
+}
+
+.background {
+	border: none;
+}

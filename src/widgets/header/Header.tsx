@@ -2,9 +2,8 @@ import { classNames } from '@/shared/lib/classNames/classNames';
 import cls from './header.module.scss';
 
 import { flags } from '@assets/icons/flags';
-import { Currency as TCurrency, CurrencyRate } from '@/services';
-import { Text } from '@shared/ui/text/Text';
-import { Currency, CurrencyTheme } from '@/shared/ui/currency/Currency';
+import { CurrencyRate } from '@/services';
+import { Currency, CurrencyTheme } from '@shared/ui/currency/Currency';
 
 const testData: CurrencyRate = {
 	"meta": {
@@ -30,7 +29,7 @@ const Logo = () => {
 	return (
 		<div className={cls.logo}>
 			<img src={flags.UAH} alt="" />
-			<p>Currency Rate Revue</p>
+			<p>Currency Rate Review</p>
 		</div>
 	)
 }

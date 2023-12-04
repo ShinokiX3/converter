@@ -1,8 +1,10 @@
 import { classNames } from '@/shared/lib/classNames/classNames';
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import cls from './MainPage.module.scss';
+import { CurrencyRate } from '@/services';
+import { Converter } from '@/widgets/converter/Converter';
 
-const testData = {
+const testData: CurrencyRate = {
 	"meta": {
 		"last_updated_at": "2023-12-03T23:59:59Z"
 	},
@@ -21,7 +23,6 @@ const testData = {
 		}
 	}
 }
-
 const MainPage = () => {
 
 	useEffect(() => {
@@ -32,9 +33,7 @@ const MainPage = () => {
 
 	return (
 		<div className={classNames(cls.MainPage, {}, [])}>
-			<div className={cls.converter_wrapper}>
-				Some
-			</div>
+			<Converter />
 		</div>
 	);
 };
