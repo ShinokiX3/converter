@@ -9,6 +9,7 @@ export default defineConfig({
 		alias: {
 			'@': resolve(__dirname, './src'),
 			'@app': resolve(__dirname, './src/app/'),
+			'@services': resolve(__dirname, './src/services/'),
 			'@assets': resolve(__dirname, './src/shared/assets/'),
 			'@shared': resolve(__dirname, './src/shared/'),
 			'@pages': resolve(__dirname, './src/pages/'),

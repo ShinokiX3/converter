@@ -28,6 +28,7 @@
 		"paths": {
 			"@/*": ["./src/*"],
 			"@app/*": ["./src/app/*"],
+			"@services/*": ["./src/services/*"],
 			"@assets/*": ["./src/shared/assets/*"],
 			"@shared/*": ["./src/shared/*"],
 			"@pages/*": ["./src/pages/*"],
