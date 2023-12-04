@@ -8,7 +8,7 @@ module.exports = {
 	],
 	ignorePatterns: ['dist', '.eslintrc.cjs'],
 	parser: '@typescript-eslint/parser',
-	plugins: ['react-refresh'],
+	plugins: ['react-refresh', 'react', '@typescript-eslint'],
 	rules: {
 		indent: [2, 'tab'],
 		'no-tabs': 0,
@@ -20,17 +20,6 @@ module.exports = {
 			{ extensions: ['.js', '.jsx', '.ts', '.tsx', 'ts'] },
 		],
 		'import/no-unresolved': 'off',
-		'import/extensions': [
-			'error',
-			'ignorePackages',
-			{
-				'': 'never',
-				js: 'never',
-				jsx: 'never',
-				ts: 'never',
-				tsx: 'never',
-			},
-		],
 		'import/prefer-default-export': 'off',
 		'no-unused-vars': 'warn',
 		'@typescript-eslint/no-unused-vars': ['off'],
