@@ -1,0 +1,22 @@
+.Currency {
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.value {
+    color: var(--color-accent);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.rounded {
+    background-color: white;
+    border-radius: var(--border-radius-sm);
+    box-shadow: var(--shadow-default);
+
+    img {
+        border-radius: var(--border-radius-sm);
+    }
+}

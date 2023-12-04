@@ -1,7 +1,13 @@
 :root {
+    --shadow-default: 0 0 10px rgba(0, 0, 0, 0.2);
+ 
     --header-height: 50px;
-    --header-color: #ff00ee;
+    --header-color: linear-gradient(45deg, #ff0000, #ff6600, #ffcc00, #33cc33, #0099ff, #9933cc);
 
     --color-primary: black;
     --color-secondary: rgb(111, 62, 62);
+    --color-accent: red;
+
+    --border-radius: 1rem;
+    --border-radius-sm: 0.5rem;
 }
