@@ -96,13 +96,13 @@ export const Converter = ({ className = '' }: ConverterProps) => {
 
 	const handleBase = (value_: string) => {
 		setTotal(String(Number(value_) * value)); 
-		setBaseCurrency(value_);
+		setBaseCurrency(value_.replace(/[^0-9.]+$/, ''));
 		setTotalTitle(value_);
 	}
 
 	const handleExchange = (value_: string) => {
 		setTotal(value_);
-		setExchangeCurrency(value_);
+		setExchangeCurrency(value_.replace(/[^0-9.]+$/, ''));
 		setTotalTitle(String(Number(value_) / value))
 	}
 
