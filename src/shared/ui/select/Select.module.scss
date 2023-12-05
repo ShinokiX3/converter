@@ -32,13 +32,17 @@
     padding: 0;
     margin: 0;
 
+    max-height: 500px;
+    z-index: 100;
+
     li {
         cursor: pointer;
         padding: 10px;
 
         &:hover,
         &:focus {
-            background: var(--color-secondary);
+            background: rgba($color: red, $alpha: 0.7);
+            border-radius: 0 0 5px 5px;
         }
     }
 }
@@ -47,10 +51,17 @@
     display: block;
 }
 
+.transformed {
+    transform: translate(0, -50%) rotate(-180deg)!important;
+}
+
 .indicator {
     height: fit-content;
     position: absolute;
+    width: 20px;
+    height: 20px;
     right: 10px;
     top: 50%;
     transform: translate(0, -50%);
+    transition: transform 0.4s ease;
 }

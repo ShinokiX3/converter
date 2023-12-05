@@ -1,3 +1,4 @@
+import { forwardRef } from 'react';
 import { classNames } from '@shared/lib/classNames/classNames';
 import cls from './Input.module.scss';
 
@@ -13,7 +14,7 @@ interface InputProps extends HTMLInputProps {
 	autofocus?: boolean;
 }
 
-export const Input: React.FC<InputProps> = (props) => {
+export const Input = forwardRef<HTMLInputElement, InputProps>((props, ref) => {
 	const { 
 		className = '', 
 		type = 'text', 
@@ -30,6 +31,7 @@ export const Input: React.FC<InputProps> = (props) => {
 		<div className={classNames(cls.Input, {}, [className])}>
 			{header ? <p className={cls.header}>{header}</p> : null}
 			<input 
+				ref={ref}
 				type={type}
 				value={value}
 				onChange={onChangeHandler} 
@@ -38,4 +40,4 @@ export const Input: React.FC<InputProps> = (props) => {
 			/>
 		</div>
 	);
-};
+});
