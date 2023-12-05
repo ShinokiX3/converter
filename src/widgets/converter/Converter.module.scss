@@ -14,9 +14,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.controls {
     gap: 20px;
 }
 
@@ -38,6 +35,10 @@
     }
 }
 
+.result {
+    min-width: 300px;
+}
+
 .date {
     p {
         font-size: var(--font-size-sm);
@@ -49,11 +50,23 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    white-space: nowrap;
 
     img {
         object-fit: cover;
         width: 25px;
         height: 25px;
         border-radius: 50%;
+    }
+}
+
+@media (max-width: 940px) {
+    .Converter {
+        margin: 10px;
+        gap: 25px;
+    }
+    .review,
+    .controls {
+        flex-direction: column;
     }
 }
