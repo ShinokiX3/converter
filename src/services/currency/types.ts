@@ -5,7 +5,7 @@ export interface Currency {
     value: number;
 }
 
-export interface CurrencyMeta { [key: string]: string }
+export interface CurrencyMeta { last_updated_at: string }
 export interface CurrencyData { [key: string]: Currency }
 
 export interface CurrencyRate {
